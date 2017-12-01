@@ -9,5 +9,9 @@ module.exports = {
         middleware: {
             1: helloProxy
         }
-    }
+    },
+    files: [
+        './dist/*',
+        './src/**'
+    ]
 };
