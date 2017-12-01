@@ -11,7 +11,9 @@ module.exports = {
         }
     },
     files: [
-        './dist/*',
-        './src/**'
-    ]
+        './dist/*'
+    ],
+    watchOptions: {
+        awaitWriteFinish: true
+    }
 };
