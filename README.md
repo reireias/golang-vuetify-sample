@@ -17,7 +17,7 @@ $ npm install -g lite-server
 $ go run main.go
 ```
 
-- run web app
+- run web app in another terminal
 
 ```
 $ cd web

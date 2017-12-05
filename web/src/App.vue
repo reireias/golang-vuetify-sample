@@ -41,6 +41,8 @@
     </v-toolbar>
     <v-content>
       <v-container fluid>
+        <v-alert color="info" value="true" v-text="value"></v-alert>
+        <br>
         <v-slide-y-transition mode="out-in">
           <v-layout column align-center>
             <img src="/public/v.png" alt="Vuetify.js" class="mb-5" />
@@ -78,20 +80,32 @@
 </template>
 
 <script>
-  export default {
+import axios from 'axios'
+export default {
     data () {
-      return {
-        clipped: false,
-        drawer: true,
-        fixed: false,
-        items: [
-          { icon: 'bubble_chart', title: 'Inspire' }
-        ],
-        miniVariant: false,
-        right: true,
-        rightDrawer: false,
-        title: 'Vuetify.js'
-      }
+        return {
+            clipped: false,
+            drawer: true,
+            fixed: false,
+            items: [
+                { icon: 'bubble_chart', title: 'Inspire' }
+            ],
+            miniVariant: false,
+            right: true,
+            rightDrawer: false,
+            title: 'Vuetify.js',
+            value: 'hoge2'
+        }
+    },
+    mounted () {
+        this.getHello()
+    },
+    methods: {
+        getHello() {
+            axios.get('/hello').then(response => {
+                this.value = response.data
+            })
+        }
     }
-  }
+}
 </script>
