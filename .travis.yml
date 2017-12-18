@@ -6,4 +6,4 @@ node_js:
 install:
   - npm install -g vue-cli
 script:
-  - vue init reireias/golang-vuetify-sample test
+  - test/test.sh
