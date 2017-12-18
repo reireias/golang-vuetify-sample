@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/reireias/golang-vuetify-sample.svg?branch=master)](https://travis-ci.org/reireias/golang-vuetify-sample)
+
 # golang-vuetify-sample
 
 golang + vuetifyjs sample.
@@ -5,10 +7,5 @@ golang + vuetifyjs sample.
 ## install
 
 ```
-$ vue init reireias/golang-vuetify-sample ./
+$ vue init reireias/golang-vuetify-sample <app name>
 ```
-
-<<<<<<< HEAD
-=======
-
->>>>>>> aea57e23fd0641cc9241d2528c8d5c822762c9b3
