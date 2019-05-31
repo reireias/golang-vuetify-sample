@@ -1,8 +1,8 @@
 ---
 language: node_js
 node_js:
-  - '8'
-  - '7'
+  - 'node'
+  - 'lts/*'
 addons:
   apt:
     packages:
@@ -11,3 +11,7 @@ install:
   - npm install -g vue-cli
 script:
   - test/test.sh
+notifications:
+  email: false
+  slack:
+    secure: LJ8QN674PemhDvgAHKZp1kSz8ZP7ajORNT9Bbyqj75UFsJ6nl33HQAokFNsAcfzFvgX8/CNgtokpK72496CJvfbK+15G1/GCKSeE8mVfw2vj0z9ujRUvf14Niy/e0VPbIlo/lpoxmELfVSCkaSP78pHWXq/4JskZxzoLpWd94Zr7IHGWolv97z2PmlB09NsCXyFz4Z6VtawOvjlzMsE9vPFU1HbQXkaAKLxIN65+F5a52tYONn0moegP4Qj0vf83p+EoBzu+YUpKBMQesvR+wmkZyQe85LrvOCRdtM3llSvsie1Tg40mwNBYR92CJRkrmHlogWpNCmh7ylw4yGvk7lHKMjByu/k6LyI9Vdx6ZTv0fakricZYTYAYNHrem08cWxSdiVFQnxFnTfdP4vOF/GW3+QwXCzdYytx0X5KfC/z2LKRVNfaq9BKJtE4pAB2CM3rfdMQ2jXPyjt/UXHUPWNyzWO/6jkve7K3Wq94NwAEhMyI7UKmYxPThmCJrg6eXv4iId67JOxtCL8v5Zf4MD6FKptFyNZT6VSRygELFy9pz1QiBMmWfCPQvHbdtjSuZDnWFySjSwtZLO6ds/EGIpEBqKtphlU5OC2eTcmkBsijhUeUWNXxFDu4hmz2e8S7vTkXCqw8mvU6Sr0pDjC5X/ZyKu7JuEhgXZLrtseeGAsA=
